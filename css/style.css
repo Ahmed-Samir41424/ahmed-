@@ -13,6 +13,9 @@ a{
 ul{
     list-style: none
 }
+html{
+    scroll-behavior: smooth;
+}
 small , span{
     display: block;
 }
@@ -735,6 +738,12 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
 .drob-item i:first-child{
     padding: 0 10px;
 }
+/*media for drob*/
+@media ( max-width: 767px){
+    .drob-item i:first-child{
+    padding: 0 2px;
+   }
+}
 /*--------------------------------------------------------------------------------------------------*/
 /*contact*/
 
@@ -824,4 +833,44 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
         width: 85%;
     }
 }
-
+/*------------------------------------------------------------------------------------------------------*/
+/*footer*/
+.footer{
+    padding: 30px 0;
+    height: auto;
+    box-shadow: 0px 2px 15px rgb(18 66 101 / 8%);
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 30px;
+}
+.footer-item .footer-title{
+    padding-bottom: 20px;
+    color: var(--s-c);
+}
+.footer-item .footer-title.one{
+    color: #888;
+    font-weight: normal;
+    font-size: 24px;
+}
+.footer-desc{
+    padding-bottom: 15px;
+    color: #777;
+}
+.footer-desc.last{
+    padding-bottom: 40px;
+}
+.footer-link li a{
+    display: block;
+    padding-bottom: 13px;
+    color: var(--t-c);
+    transition: color .2s;
+}
+.footer-link li a i{
+    color: var(--m-c);
+}
+.footer-link li a:hover{
+    color: var(--m-c);
+}
+/*-------------------------------------------------------------------------------------------------------*/
