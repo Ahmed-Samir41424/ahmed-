@@ -877,3 +877,27 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
     color: var(--m-c);
 }
 /*-------------------------------------------------------------------------------------------------------*/
+
+#btn{
+    background-color: var(--m-c);
+    color: #fff;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
